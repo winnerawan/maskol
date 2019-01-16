@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white_semi_blue"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:background="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/holder_image"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/home_lst_img"
+                android:layout_height="175dp"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY" />
+
+
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <TextView
+                        android:textAllCaps="true"
+                        android:gravity="top"
+                        android:id="@+id/home_lst_txtTempat"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_width="wrap_content"
+                        android:paddingStart="@dimen/padding_15dp"
+                        android:paddingEnd="@dimen/padding_15dp"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <FrameLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:paddingBottom="4dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="@dimen/padding_8dp">
+
+                <LinearLayout
+                    android:gravity="right"
+                    android:layout_gravity="right"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content">
+
+                    <TextView
+                        android:id="@+id/created_at"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"/>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@null"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:textAllCaps="true"
+                    android:id="@+id/home_lst_txtNama"
+                    android:background="@drawable/shape_card_type"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="right|bottom"
+                android:layout_gravity="right|bottom"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_bottom_80dp"
+                android:layout_width="match_parent">
+
+                <com.groges.wiskulmokerguide.SwipeButtonPrice
+                    android:id="@+id/home_lst_txtHarga"
+                    android:layout_width="75dp"
+                    app:inner_text_color="@color/colorPrimaryDark"
+                    android:layout_height="wrap_content"
+                    app:button_image_disabled="@mipmap/ic_idr2"
+                    app:button_image_height="24dp"
+                    app:inner_text_left_padding="16dp"
+                    app:button_image_width="24dp"
+                    android:layout_marginRight="@dimen/padding_8dp"
+                    app:inner_text_top_padding="4.5dp"
+                    app:inner_text_bottom_padding="4.5dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

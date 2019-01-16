@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MokerActivity"
+    tools:showIn="@layout/activity_moker"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:isScrollContainer="true"
+    >
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="24dp"
+            android:isScrollContainer="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/ic_mojokerto" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
+        android:padding="6dp"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
+        android:scrollbars="vertical"
+        android:text="Kabupaten Mojokerto memiliki sejumlah objek wisata menarik. \n Mulai dari Kabupaten Mojokerto bagian Utara, ada Kecamatan Kemlagi terdapat wisata yang cukup banyak dikunjungi yaitu Waduk Tanjungan yang terdapat di desa Tanjungan, Kemlagi. Kemudian di Kecamatan Jetis ada Watu Blorok yang konon dulu saat pembangunan jalan, ada sebuah batu yang cukup besar yang akan dipindahkan karena berada pada tengah pembangunan jalan, namun esok harinya batu tersebut kembali ke posisi semula saat sebelum dipindahkan, namun wisata ini sekarang sepi pengunjungnya karena perawatan yang kurang. Ada pula wisata di bantaran sungai Brantas yang biasanya digunakan untuk event-event besar seperti Lomba Dayung, Lomba Layang-layang, dll.  Di kecamatan trowulan, yang pernah menjadi pusat Kerajaan Majapahit. Ini terlihat dari banyaknya sisa peninggalan sejarah kerajaan tersebut yang dijumpai di sana. Trowulan adalah daya tarik utama wisata sejarah di kabupaten ini, karena terdapat puluhan candi peninggalan Kerajaan Majapahit, makam raja-raja Majapahit, serta Pendopo Agung yang diperkirakan berada tepat di pusat istana Majapahit, candi yang terdapat di kecamatan ini antara lain Candi Tikus, Candi Bajang Ratu, Candi Brahu, Candi Gentong, Candi Wringin Lawang, dan masih banyak Candi lain yang ditemukan.  Kawasan pegunungan di kecamatan Pacet dan Kecamatan Trawas di selatan juga merupakan kawasan wisata andalan Kabupaten Mojokerto karena pemandangan yang sangat bagus dan hawa sejuk pegunungan yang dirasa sangat nyaman, di antaranya ada Wisata Arung Jeram dan Lokasi Outbound Training OBECH Wilderness Experience, Pemandian Air Panas di Padusan, Air terjun yang banyak antaranya Air terjun Coban Canggu, Air terjun Grenjengan, Air terjun Watu Ulo, dll, juga vila-vila peristirahatan di Pacet dan Trawas. "
+        android:textAlignment="textStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+</android.support.constraint.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@+id/layout_map_view"
+             android:layout_height="wrap_content"
+             android:layout_marginBottom="10dp"
+             android:layout_width="match_parent"
+             android:orientation="vertical"
+             android:tag="layout/food_map_view_0"
+             xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/mapview_food_map"
+              android:layout_width="match_parent"
+              android:layout_height="200dp"
+              android:name="com.google.android.gms.maps.SupportMapFragment" />
+    <!--<com.google.android.gms.maps.OkMapView-->
+    <!--android:clickable="true"-->
+    <!--android:focusable="true"-->
+    <!--android:id="@+id/mapview_food_map"-->
+    <!--android:layout_height="200dp"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--android:layout_width="match_parent" />-->
+</FrameLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@drawable/bg3"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imagelogo"
+        android:layout_width="150.0dip"
+        android:layout_gravity="center"
+        android:layout_height="150.0dip"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80.0dip"
+        android:src="@drawable/logo_moker" />
+
+    <TextView
+        fontPath="font/neosanspro_medium.ttf"
+        android:id="@+id/welcome_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:alpha="0.0"
+        android:textAllCaps="true"
+        android:text="@string/app_name"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp" />
+</LinearLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "319105616898",
+    "firebase_url": "https://wiskulmokerguide.firebaseio.com",
+    "project_id": "wiskulmokerguide",
+    "storage_bucket": "wiskulmokerguide.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:319105616898:android:7cbf9b8a93ffc995",
+        "android_client_info": {
+          "package_name": "com.groges.wiskulmokerguide"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "319105616898-9lp9bq8vmap2jhom2hvc40m1t5e7dgmg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.groges.wiskulmokerguide",
+            "certificate_hash": "55c614d321e423300c52d8fe39e59af02e132690"
+          }
+        },
+        {
+          "client_id": "319105616898-bch4r9ckj5m7ibo080tkb66rfcpe3bf3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKBtwtSuLCgfTEWzs0QY5ExMEwIJOl_mU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "319105616898-bch4r9ckj5m7ibo080tkb66rfcpe3bf3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

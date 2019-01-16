@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.groges.wiskulmokerguide">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <application
+        android:name=".Moker"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/FullTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!-- <activity -->
+        <!-- android:name=".Fasilitias" -->
+        <!-- android:label="@string/title_activity_fasilitias" -->
+        <!-- android:parentActivityName=".MainActivity"> -->
+        <!-- <meta-data -->
+        <!-- android:name="android.support.PARENT_ACTIVITY" -->
+        <!-- android:value="com.groges.wiskulmokerguide.MainActivity" /> -->
+        <!-- </activity> -->
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_map"/>
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps"/>
+        <activity
+            android:name=".ShowMap"
+            android:label="@string/title_activity_show_map">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.groges.wiskulmokerguide.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".NewMainActivity"
+            android:label="@string/title_activity_new_main"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DetailKuliner.DetailKulinerActivity"
+            android:label="@string/title_activity_detail_kuliner"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.groges.wiskulmokerguide.NewMainActivity"/>
+        </activity>
+        <activity
+            android:name=".Wisata.DetailWisata"
+            android:label="@string/title_activity_detail_wisata"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.groges.wiskulmokerguide.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".Hotel.DetailHotel"
+            android:label="@string/title_activity_detail_hotel"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.groges.wiskulmokerguide.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".Kuliner.DetailKuliner"
+            android:label="@string/title_activity_detail_kuliner"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.groges.wiskulmokerguide.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".DetailKuliner.DetailMenu"
+            android:label="@string/title_activity_detail_menu"
+            android:parentActivityName=".NewMainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.groges.wiskulmokerguide.NewMainActivity"/>
+        </activity>
+        <activity
+            android:name=".DetailTempat.DetailTempat"
+            android:label="@string/title_activity_detail_tempat"
+            android:parentActivityName=".NewMainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.groges.wiskulmokerguide.NewMainActivity"/>
+        </activity>
+        <activity
+            android:name=".MokerActivity"
+            android:label="@string/title_activity_moker"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.groges.wiskulmokerguide.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".Search"
+            android:label="@string/title_activity_search"
+            android:parentActivityName=".NewMainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.groges.wiskulmokerguide.NewMainActivity"/>
+        </activity>
+        <activity android:name=".UpdateActivity">
+        </activity>
+    </application>
+
+</manifest>

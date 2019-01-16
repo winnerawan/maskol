@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/layout_row_item"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:tag="layout/food_item_merchant_menu_0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:paddingBottom="15dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="16dp">
+
+            <RelativeLayout
+                android:id="@+id/layout_image_merchant"
+                android:layout_height="100dp"
+                android:layout_marginRight="16dp"
+                android:layout_width="100dp">
+
+                <ImageView
+                    android:id="@+id/menuWarung_lst_img"
+                    android:layout_gravity="top|center_vertical|center_horizontal|center"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:scaleType="centerCrop" />
+            </RelativeLayout>
+
+            <TextView
+                android:visibility="gone"
+                android:drawablePadding="3dp"
+                android:fontFamily="sans-serif"
+                android:id="@+id/text_social_info"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                android:layout_toRightOf="@+id/layout_image_merchant"
+                android:layout_width="wrap_content"
+                android:paddingRight="16dp"
+                android:tag="binding_2"
+                android:textColor="#7f7f7f"
+                android:textSize="12sp" />
+
+            <TextView
+                android:ellipsize="end"
+                android:id="@+id/menuWarung_lst_txtNama"
+                android:layout_below="@+id/text_social_info"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="54dp"
+                android:layout_toRightOf="@+id/layout_image_merchant"
+                android:layout_width="match_parent"
+                android:lineSpacingMultiplier="1.2"
+                android:maxLines="2"
+                android:tag="binding_3"
+                android:textColor="#4b4b4b"
+                android:textSize="17sp" />
+
+            <RatingBar
+                android:id="@+id/menuWarung_lst_ratingBar"
+                style="@android:style/Widget.DeviceDefault.Light.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/menuWarung_lst_txtNama"
+                android:layout_marginTop="4dp"
+                android:layout_toEndOf="@+id/layout_image_merchant"
+                android:isIndicator="true"
+                android:rating="0"/>
+
+            <TextView
+                android:ellipsize="end"
+                android:fontFamily="sans-serif"
+                android:id="@+id/menuWarung_lst_txtKet"
+                android:layout_below="@+id/menuWarung_lst_ratingBar"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/layout_image_merchant"
+                android:layout_width="wrap_content"
+                android:minHeight="20dp"
+                android:paddingBottom="9dp"
+                android:layout_marginBottom="8dp"
+                android:paddingRight="20dp"
+                android:tag="binding_4"
+                android:textColor="#80000000"
+                android:textSize="13sp" />
+
+            <TextView
+                android:fontFamily="sans-serif"
+                android:id="@+id/menuWarung_lst_txtHarga"
+                android:layout_alignLeft="@+id/menuWarung_lst_txtNama"
+                android:layout_below="@+id/menuWarung_lst_txtKet"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:paddingRight="16dp"
+                android:tag="binding_5"
+                android:textColor="#4b4b4b"
+                android:textSize="16sp" />
+
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <View
+        android:background="@android:color/transparent"
+        android:id="@+id/view_highlight"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:tag="binding_19" />
+
+</FrameLayout>

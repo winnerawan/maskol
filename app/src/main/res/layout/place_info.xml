@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@drawable/food_merchant_shadow"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:tag="layout/food_merchant_info_0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        fontPath="font/neosanspro_medium.ttf"
+        android:id="@+id/tempat_txtNama"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingTop="1dp"
+        android:tag="binding_1"
+        android:textColor="#212121"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:visibility="visible" />
+
+    <TextView
+        android:ellipsize="end"
+        android:fontFamily="sans-serif"
+        android:id="@+id/tempat_txtAlamat"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_width="match_parent"
+        android:maxLines="2"
+        android:minHeight="24dp"
+        android:minLines="2"
+        android:paddingRight="16dp"
+        android:tag="binding_2"
+        android:textColor="#7d000000"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:id="@+id/layout_merchant_status"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:background="@drawable/food_button_stroke_green"
+            android:id="@+id/layout_opened_closed"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingBottom="3dp"
+            android:paddingLeft="9dp"
+            android:paddingRight="9dp"
+            android:paddingTop="3dp"
+            android:tag="binding_3">
+
+            <TextView
+                android:fontFamily="sans-serif"
+                android:id="@+id/tempat_txtTelpon"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:tag="binding_4"
+                android:textSize="14sp" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="8">
+
+            <TextView
+                android:fontFamily="sans-serif"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="7"
+                android:layout_width="0dp"
+                android:tag="binding_5"
+                android:textColor="#7f7f7f"
+                android:textSize="12sp" />
+
+            <!--<LinearLayout-->
+                <!--android:gravity="right|center_vertical|center_horizontal|center|end"-->
+                <!--android:id="@+id/layout_three_dots"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:paddingRight="16dp"-->
+                <!--android:tag="binding_6">-->
+
+                <!---->
+            <!--</LinearLayout>-->
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:visibility="gone"
+        android:id="@+id/layout_voucher_card"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:tag="binding_7">
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/img_voucher_gift"
+                android:layout_height="28dp"
+                android:layout_width="28dp"
+                android:tag="binding_8" />
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:id="@+id/container_voucher_info"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:ellipsize="end"
+                    android:id="@+id/text_you_have_voucher"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:maxLines="1"
+                    android:tag="binding_9"
+                    android:textColor="#333333"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:gravity="left|center_vertical|center_horizontal|center|start"
+                    android:id="@+id/text_tap_to_use"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="0"
+                    android:layout_width="wrap_content"
+                    android:tag="binding_10"
+                    android:textColor="#42c25b"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

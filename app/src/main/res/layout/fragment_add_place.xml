@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context="com.groges.wiskulmokerguide.FragmentUserRekomendasi">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/addPlace_cardNew"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="28dp"
+        android:focusableInTouchMode="false"
+        app:cardElevation="2dp"
+        app:contentPadding="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/addPlace_txtNmTempat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="18dp"
+                android:ems="10"
+                android:hint="Nama Tempat"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/addPlace_txtAlamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/addPlace_txtNmTempat"
+                android:hint="Alamat"
+                android:inputType="textMultiLine"
+                android:lines="3"
+                android:maxLines="10"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/addPlace_txtLatLng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/addPlace_txtTelpon"
+                android:layout_centerHorizontal="true"
+                android:text="Latitude : 0, Longitude : 0" />
+
+            <Button
+                android:id="@+id/addPlace_setLokasi"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/addPlace_txtLatLng"
+                android:layout_centerHorizontal="true"
+                android:text="TENTUKAN KOORDINAT LOKASI" />
+
+
+            <ImageView
+                android:id="@+id/addPlace_img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/addPlace_setLokasi"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/common_google_signin_btn_icon_light_normal_background"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_menu_camera" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/addPlace_img"
+                android:layout_centerHorizontal="true"
+                android:text="Ukuran maksimal gambar : 500KB"
+                android:textSize="10sp" />
+
+            <EditText
+                android:id="@+id/addPlace_txtTelpon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/addPlace_txtAlamat"
+                android:layout_centerHorizontal="true"
+                android:ems="10"
+                android:hint="No. Telpon"
+                android:inputType="phone" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/addPlace_btnKirim"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/addPlace_cardNew"
+        android:layout_alignParentBottom="true"
+        android:text="SELANJUTNYA"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <ProgressBar
+        android:id="@+id/addPlace_progress"
+        style="@android:style/Widget.ProgressBar.Large.Inverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

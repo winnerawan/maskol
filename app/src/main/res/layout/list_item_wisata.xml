@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="6dp"
+    android:layout_marginRight="6dp"
+    android:layout_marginTop="8dp"
+    app:cardBackgroundColor="@color/cardview_light_background"
+    app:contentPadding="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/wisata_lst_img"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="Gambar Wisata"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/common_google_signin_btn_icon_light_normal_background" />
+
+        <TextView
+            android:id="@+id/wisata_lst_txtNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/wisata_lst_img"
+            android:text="Nama"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context="com.groges.wiskulmokerguide.FragmentUserRekomendasi">
+
+
+    <EditText
+        android:id="@+id/rekom_txtNmMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Nama Menu Kuliner"
+        android:inputType="textPersonName" />
+
+    <AutoCompleteTextView
+        android:id="@+id/rekom_txtJnsMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/rekom_txtNmMenu"
+        android:hint="Jenis Kuliner (Ex: Soto, Bakso, Pecel, dll.)" />
+
+    <TextView
+        android:id="@+id/rekom_txtNmTempat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:text="Nama Tempat"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/rekom_txtAlamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/rekom_txtNmTempat"
+        android:maxLines="10"
+        android:text="Alamat Tempat Kuliner"
+        android:textAlignment="center"
+        android:textSize="14sp" />
+
+
+    <ImageView
+        android:id="@+id/rekom_imgMenu"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="149dp"
+        android:background="@drawable/common_google_signin_btn_icon_light_normal_background"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_menu_camera" />
+
+    <Button
+        android:id="@+id/rekom_btnKirim"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="KIRIM REKOMENDASI"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <ProgressBar
+        android:id="@+id/rekom_progress"
+        style="@android:style/Widget.ProgressBar.Large.Inverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rekom_imgMenu"
+        android:layout_centerHorizontal="true"
+        android:text="Ukuran maksimal gambar : 500KB"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/rekom_txtAlamat"
+        android:text="Rekomendasikan menu kesukaanmu ditempat ini"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp" />
+
+</RelativeLayout>
